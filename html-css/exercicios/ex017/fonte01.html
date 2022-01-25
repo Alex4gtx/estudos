@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            /*
+            medidas absolutas
+            cm, mm, in, px, pt, pc
+
+            medidas relativas
+            em, ex, rem, vw, vh, %
+
+            16px = 1em
+            recomendação oficial, usar px ou em
+            */
+
+            font-weight: bold;
+            /*
+            peso da fonte
+            lighter normal bold bolder
+            nivel de negrito
+            */
+
+            font-style: italic;
+            /* estilo da fonte
+            nivel de itálico*/
+
+            text-decoration: underline;
+            /*
+            adiciona tipos de underline no texto
+            */
+        }
+
+        h1 {
+            /*
+            shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            a ordem manda no código
+
+            font-family: 'work sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'work sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sequi molestias esse vero, consequuntur nobis asperiores fuga eligendi, in, repellendus repellat voluptates sint eos ea architecto quibusdam. Ullam, maxime blanditiis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, iusto provident aperiam quam beatae assumenda repudiandae et tempore labore eos. Quam, aliquid! Et nobis iure porro nulla distinctio minima tempore.</p>
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolores harum. Dolor, mollitia magnam. Ipsum illum odio, quaerat aspernatur explicabo sit impedit animi corrupti sunt similique a, odit vero natus.</p>
+</body>
+</html>
