@@ -24,6 +24,22 @@
         div:hover {
             color: red;
         }
+
+        div#teste:hover {
+            color: blue;
+        }
+
+        div#teste > p {
+            display: none;
+        }
+
+        div#teste:hover > p {
+            display: block;
+            color: white;
+            background-color: violet;
+            width: 300px;
+        }
+
     </style>
 </head>
 <body>
@@ -32,6 +48,10 @@
     <div>Passe o mouse aqui
         <p>Texto escondido...</p>
     </div>
-    <p>Fim do Exemplo/p>
+    <div id="teste">
+        clique aqui
+        <p>Hello world!</p>
+    </div>
+    <p>Fim do Exemplo</p>
 </body>
 </html>
