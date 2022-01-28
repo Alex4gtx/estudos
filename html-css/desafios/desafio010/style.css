@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf');
+}
+
+@font-face {
+    font-family: 'headingpro';
+    src: url('fontes/Heading-Pro-Bold-trial.ttf');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(127, 255, 170, 0.747);
+    margin: auto;
+}
+
+/* cabeçalho e menu */
+header {
+    text-align: center;
+    background-image: linear-gradient(to top, rgb(0, 90, 30) 15%, rgb(112, 233, 148));
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-attachment: local;
+
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+#descricao {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.459);
+    margin: auto 20px 40px 20px;
+}
+
+#titulo {
+    font-family: 'headingpro';
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 30px 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.459);
+}
+
+#menu {
+    text-align: left;
+
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+
+#menu > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 11px 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: -6px;
+}
+
+#menu > a:hover {
+    background-image: linear-gradient(to top, rgb(0, 160, 53), rgb(88, 240, 151));
+}
+
+/* conteúdo geral do site*/
+/*artigo*/
+main {
+    width: 700px;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 0px auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.349);
+}
+
+article {
+    margin: auto;
+}
+
+.texto {
+    text-align: justify;
+    text-indent: 30px;
+    margin: auto 20px;
+}
+
+h2 {
+    font-family: 'android';
+    color: rgb(0, 99, 25);
+}
+
+/* seção */
+h3 {
+    font-family: 'android';
+    color: rgb(0, 99, 25);
+    background-image: linear-gradient(to right, #00ff5577, #00ff5536, white);
+}
+
+/* rodapé */
+footer {
+    background-color: rgb(0, 66, 28);
+    padding: 1px 0px;
+    margin: 20px auto auto auto;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+}
