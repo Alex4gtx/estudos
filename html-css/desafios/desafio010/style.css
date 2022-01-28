@@ -80,6 +80,16 @@ main {
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.349);
 }
 
+mark {
+    background-color: transparent;
+    color: rgb(0, 99, 25);
+    font-weight: bold;
+}
+
+abbr {
+    text-decoration: none;
+}
+
 article {
     margin: auto;
 }
@@ -100,6 +110,17 @@ h3 {
     font-family: 'android';
     color: rgb(0, 99, 25);
     background-image: linear-gradient(to right, #00ff5577, #00ff5536, white);
+}
+
+#bugdroid {
+    text-align: center;
+}
+
+#irina {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
 }
 
 /* rodapé */
