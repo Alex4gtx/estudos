@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        :root {
+            --cor01: #00005e;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.377);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgba(0, 89, 255, 0.781);
+            padding-top: 1px;
+        }
+
+        #boxh1 {
+            background-color: rgb(255, 230, 0);
+            width: 260px;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 30px;
+            box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.404);
+        }
+
+        header h1 {
+            font-size: 2em;
+            text-transform: uppercase;
+            
+            
+            text-align: center;
+        }
+
+        header p {
+            color: whitesmoke;
+            text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.404);
+            text-align: center;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: rgba(15, 15, 15, 0.815);
+            padding: 5px;
+            box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.404);
+        }
+
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-top: 2px;
+            margin-left: 0px;
+        }
+
+        nav > a:hover {
+            background-color: rgba(255, 255, 255, 0.151);
+        }
+
+        main {
+            background-color: white;
+            border-radius: 0px 0px 20px 20px;
+            min-width: 340px;
+            max-width: 800px;
+            min-height: 600px;
+            max-height: auto;
+            margin: auto;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
+        }
+
+        main article {
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 30px;
+        }
+
+        main article img {
+            width: 100%;
+        }
+
+        main article p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            font-weight: normal;
+            text-align: justify;
+            text-indent: 25px;
+        }
+
+        main article h1 {
+            color: var(--cor01);
+            text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.404);
+            background-image: linear-gradient(to right, white 20%, var(--cor01));
+            text-align: left;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            padding: 15px 0px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: rgb(15, 15, 15);
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        footer p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="boxh1">
+            <h1>Web Python</h1>
+        </div>
+        <p>Tudo em tecnologia para seu desenvolvimento em sites HTML em Python!</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Artigos</a>
+        <a href="#">Dowloads</a>
+        <a href="#">Mais</a>
+        <a href="#">Ajuda</a>
+    </nav>
+    <main>
+        <article>
+            <h1>titulo do texto</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel fugit placeat vitae corrupti nemo expedita provident odio optio illum, cupiditate ipsa, eaque nihil totam rem amet unde ea, iusto odit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa qui labore dolores accusamus praesentium illo saepe facere commodi non. Enim, eligendi pariatur? Reiciendis eum, consequatur perspiciatis vero doloremque provident quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quo aliquam, veniam architecto sunt non dolorum temporibus rem consectetur iste dolores provident enim commodi hic at voluptates, velit doloribus in!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quos minus, repellendus nesciunt commodi culpa nostrum nam quidem, voluptatibus explicabo sunt non reiciendis debitis nobis voluptas eius accusamus obcaecati ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis odio, officia officiis suscipit asperiores laudantium ad id, consequuntur eaque amet nam, tempora sed provident voluptate quae totam ab? Deleniti.</p>
+            <br>
+            <img src="limoes-ou-limaes-aprenda-sobre-o-plural-das-palavras-terminadas-em-ao.jpg" alt="limões">
+        </article>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Alex.corp</p>
+    </footer>
+</body>
+</html>
