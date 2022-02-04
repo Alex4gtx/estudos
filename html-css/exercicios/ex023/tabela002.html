@@ -25,6 +25,13 @@
             color: white;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         .num {
             text-align: right;
         }
@@ -35,6 +42,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,9 +51,10 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -103,8 +112,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td><strong>149 398 963</strong></td>
+                <th scope="row">Total de habitantes</th>
+                <td scope="row" class="num"><strong>149 398 963</strong></td>
             </tr>
         </tfoot>
     </table>
