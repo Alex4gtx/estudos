@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables 01</title>
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead, tfoot, th {
+            background-color: gray;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tr > td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: white;
+        }
+
+        .mark {
+            background-color: lightcoral;
+            transition: .5s;
+        }
+
+        .mark:hover {
+            background-color: lightblue;
+            transition: .5s;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: rgba(255, 255, 255, 0.37);
+            transition: .5s;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Testes com tabelas</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>col-1</th>
+                <th>col-2</th>
+                <th>col-3</th>
+                <th>col-4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td class="mark">E</td>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>N</td>
+                <td>O</td>
+                <td>P</td>
+            </tr>
+            <tr>
+                <td>Q</td>
+                <td>R</td>
+                <td>S</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>U</td>
+                <td>V</td>
+                <td>W</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>Z</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>22</td>
+                <td rowspan="2">33</td>
+                <td rowspan="2">44</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>111</td>
+                <td>222</td>
+                <td>333</td>
+            </tr>
+            <tr>
+                <td>444</td>
+                <td>555</td>
+                <td class="mark" colspan="2">777</td>
+            </tr>
+            <tr>
+                <td>888</td>
+                <td>999</td>
+                <td>1111</td>
+                <td>2222</td>
+            </tr>
+            <tr>
+                <td>3333</td>
+                <td>4444</td>
+                <td>5555</td>
+                <td>6666</td>
+            </tr>
+            <tr>
+                <td>7777</td>
+                <td>8888</td>
+                <td>9999</td>
+                <td>11111</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>total-col</th>
+                <td colspan="3">num66746</td>
+            </tr>
+        </tfoot>
+    </table>
+    <footer>
+        <p>Site criado por <a href="#"><strong>Alex Giovani Hirsch</strong></a></p>
+    </footer>
+</body>
+</html>
