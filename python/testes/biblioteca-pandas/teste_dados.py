@@ -42,10 +42,57 @@ def escrever_dados(arquivo, lista_dados, encoding='utf8'):
         with open(arquivo, 'w', encoding='utf8') as f_obj:
             for d in tqdm(lista_dados, 'Escrevendo Dados', unit='lines', colour='green'):
                 f_obj.write(d + '\n')
-        
+
+
+def count_lines(arquivo, numb_linhas=0, encoding='utf8'):
+    """ faz contagem de linhas de um arquivo """
+
+    from tqdm import tqdm
+
+    with open(arquivo, encoding=encoding) as dicionario:
+        count = numb_linhas
+        if count > 0:
+            print(f'Adicionado contagem de linhas manual, numero de linhas: {count}')
+            return count
+        else:
+            for i, line in tqdm(enumerate(dicionario), 'Captando linhas', unit='lines'):
+                count += 1
+            print(f'O arquivo possui {count} linhas.')
+            return count
+
+
+def data_filter(data_list, totchar_numb=8):
+    
+    from tqdm import tqdm
+
+    result = list()
+    text = f'Filtrando palavras com {totchar_numb} caracteres'
+    for data in tqdm(data_list, text, colour='red'):
+        c = 0
+        for d in data:
+            c += 1
+        if c < totchar_numb:
+            None
+        else:
+            result.append(data)
+    return result
 
 arquivo = r"C:\Games\parrot\dicionarios\Nova pasta (2)\Top2Billion-probable-v2.txt"
-resultado = getlines(arquivo, 200, 10, 'ansi')
-escrever_dados('teste.txt', resultado)
 
-print('\nfim\n')
+from tqdm import tqdm
+
+dado = 10000000
+n = count_lines(arquivo, 1973218846, 'ansi')
+n1 = 111 * 10000000
+vezes = 197 - 111
+for c in tqdm(range(vezes), 'DADOS', unit='packets', colour='cyan'):
+    if n == 0:
+        break
+    resultado = getlines(arquivo, n1, dado, 'ansi')
+    filtrado = data_filter(resultado, 8)
+    escrever_dados('resultado_sup_2.txt', filtrado)
+    resultado.clear
+    filtrado.clear
+    n -= dado
+    n1 += dado
+print('fim')
