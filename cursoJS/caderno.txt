@@ -1,0 +1,41 @@
+alert('escrever texto')  // é igual o print do python
+
+"", '' ou `` // são formas de declarar strings
+
+var nomedavariavel = valor // forma de atribuir valores a variaveis
+
+confirm('quer digitar algo?') // forma diferencial de input, que aceita ok ou cancel (botôes)
+
+prompt('digite seu nome: ') // mesma função do input no python.
+
+12, 433.0948, -12, -9.9087, -0,989, 0 // são conhecidos pelo java script como numbers
+
+true, false // são valores booleans
+
+- tipos primitivos -
+// tipos de dados
+numbers
+    infinity
+    NaN
+string
+boolean
+null
+undefined
+object
+    Array
+function
+
+typeoff variavel // verifica o tipo primitivo da variavel
+
+
+n1.toFixed(2) // adiciona as casas após a virgula de um numero
+
+n1.toFixed(2).replace('.', ',') // comando que troca um caractere por outro
+
+n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) // comando que converte um numro para um numero de currencya tipo: R$ 12650.50
+
+document.write(`Olá <strong>${nome}</strong>, Seu nome tem ${nome.length} letras.`)
+
+document.writeln(`<br>o seu nome em maiusculas é ${nome.toUpperCase()}`) // toUpperCase() trasforma strings em maiusculas
+
+document.writeln(`<br>o seu nome em minusculas é ${nome.toLowerCase()}`) // toLowerCase() transforma em minusculas
