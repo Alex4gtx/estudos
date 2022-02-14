@@ -43,10 +43,16 @@ nav a {
     text-transform: capitalize;
     font-weight: bold;
     font-style: oblique;
-    padding: 5px;
+    padding: 6px;
     margin: -3px;
     color: white;
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.226);
+}
+
+nav a:hover {
+    background-color: rgba(255, 0, 0, 0.267);
+    text-shadow: 0px 0px 3px white;
+    transition: .3s;
 }
 
 body {
@@ -91,6 +97,11 @@ section > h1 {
     box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.74);
     width: 200px;
     border-radius: 10px;
+}
+
+.filmes:hover, img:hover {
+    background-color: rgba(255, 0, 0, 0.527);
+    transition: .5s;
 }
 
 footer {
