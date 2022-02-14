@@ -50,22 +50,32 @@ nav a {
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.836);
+    background-image: url("https://viciados.net/wp-content/uploads/2019/09/fala-universidades-netflix-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main {
-    background-color: rgba(255, 0, 0, 0.192);
-    width: 900px;
+    background-color: rgba(24, 24, 24, 0.329);
     margin: auto;
     padding: 10px;
 }
+
 section {
     width: 900px;
+    margin: auto;
     
 }
 
 .destaques {
     overflow-x: scroll;
+    width: 900px;
+    display: block;
+}
+
+section > h1 {
+    color: white;
 }
 
 .filmes {
@@ -81,4 +91,20 @@ section {
     box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.74);
     width: 200px;
     border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer p, abbr, a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.356);
+    transition: .5s;
 }
