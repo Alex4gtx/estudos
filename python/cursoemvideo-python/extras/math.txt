@@ -1,0 +1,9 @@
+biblioteca math
+import math
+
+ceil()| arredondamento pra cima
+floor()| arredondamento para baixo
+trunk()| truncar, eliminar do ponto para frente
+pow() | potência
+sqrt() | raiz quadrada
+factorial() | fatoriais

@@ -1,0 +1,420 @@
+variavel = qualquer codigo | variaveis é um metodo diferente de nomear uma funcão e codigos exe: mensagem = 'ola mundo'
+. | serve para mandar python usar algo em uma variavel ou função exe: nome.title()
+print() | função | mostra informações na tela
+
+______________________________________________________________________________________________________________________________________
+------------------------------------string---------------------------------
+'' ou "" | strings, são usados como letras ou converte numeros em caracteres usaveis
+-----------------------------------concatenação----------------------------
+\n | conatenação | string | usado dentro de uma string para criar uma quebra de linha exe: 'ola mundo\nmeu nome é alex'
+\t | concatenação| string | usado para tabulação exe: '\tola mundo' | '    ola mundo'
++ | usado para adicionar exe: 'ola' + 'mundo' | 'olamundo'
+
+-----------------------------------metodos---------------------------------
+metodo M | Um método é uma ação que Python pode executar em um dado
+
+title() | metodo M | usado para deixar a primeira letra de cada palavra de uma string em maiuscula, 'ola'.title() | 'Ola'
+lower() | metodo M | usado para deixar todas as palavras em minusculo  'OLA MUNDO'.lower() | 'ola mundo'
+upper() | metodo M | usado para deixar todas as letras de todas as palavras em maiusculo  'ola mundo'.upper() | 'OLA MUNDO'
+strip() | metodo M | usado para tirar espaços em branco de ambos os lados menos no meio exe: '    ola mundo   ' | 'ola mundo'
+rstrip()| metodo M | usado para tirar o espaço em branco do lado direito exe: '   ola mundo   ' | '   ola mundo'
+lstrip()| metodo M | usado para tirar o espaço em branco do lado esquerdo exe: '    ola mundo  '| 'ola mundo   '
+
+
+______________________________________________________________________________________________________________________________
+----------------------------------numeros----------------------------------
++ | numeros | adição  2+2
+- | numeros | subtração  7-3
+* | numeros | multiplicação  2*9
+/ | numeros | divisão  4\2
+**| numeros | exponenciação  | 2**3
+()| numeros | usado em expressões  | (2+3)*9
+% | numeros | operador de modulo, faz a divisão porem retorna o resto, 5 % 3 = 2
+0-9 | numeros | inteiros int
+0.1 - 9,9878 | numeros | flutuantes float
+---------------------------------funções-----------------------------------
+str() | função C class | transforma tudo em string  0.1 em '0.1' ou 678 em '678'
+int() | função C class | transforma apenas string e float numerica em inteitos | 0,5 em 5 ou '675' em 675
+float() | função C class | transforma apenas numeros e numeros em strings em float
+input() | entrada de dados do usuario, retorna valores em string, variavel = input('insira o nome: ')
+
+
+___________________________________________________________________________________________________________________________
+--------------------------------lista---------------------------------------
+lista = [] | serve para guardar informações exe: lista = ['alex', 'carro', 345, 0.8787, 'jiy976']
+lista[] | acessa um indice de uma lista exe: lista[0] | 'alex'
+list comprehension | lista = [value**2 for value in range(1,11)]
+----------------------------fatiando lista----------------
+lista[0:3] | devolve indice 0,1,2
+lista[1:4] | devolve indices 1,2,3,4
+lista[:4] | devolve indice 0,1,2,3
+lista[2:] | devolve indice 2,3,4,5....
+lista[-3:] | mostra os 3 ultimos
+pode se usar um laço
+lista[:] | cria copia exata de uma lista
+-------------------------------função---------------------------------------
+sorted() | função F | mostra uma lista de forma ordenada temporariamente, sorted(lista) pode ser usado reverse
+len() | conta o numero de itens em uma lista e os devolve em um numero int, len(lista) | 5
+range() | cria uma lista numerica, range(1, 5) ou variavel = range(0, 9), range(2, 10, 2) cria uma lista de 2 a 10 que mostra de 2 em 2
+list() | converte range em lista, variavel = list(range(1, 5))
+min() | devolve o numero minimo de uma lista de numeros, min(lista) | 0
+max() | devolve o numero maximo de uma lista de numeros, max(lista) | 100
+sum() | devolve a soma de todos os numeros de uma lista de numeros, sum(lista) | 64738
+--------------------------------tuplas---------------------------------
+lista_tupla = () | tipo de lista que não pode ser apagada ou modificada | pode ser acessada como qualquer lista, lista_tupla[0]
+alterando valor de uma tupla | lista_tupla[0] = 'novo item'
+pode ser redefinida | lsttupla = (1, 2, 3) para lsttupla = (5, 7, 8)
+-------------------------------metodos--------------------------------------
+append() | metodo M | adiciona um item no final de uma lista concatenando exe: lista.append('item') | lista = ['aedvue', 'dkji', 'item']
+insert() | metodo M | adiciona um elemento em qualquer ponto da lista exe: lista.insert(0, 'item') | adiciona item no indice 0
+pop() | metodo M | remove item de uma lista com ou sem indice, pode ser retornado o valor quando em uma variavel | lista.pop(0) ou variavel = lista.pop(indice)
+remove() | metodo M | remove apenas a primeira ocorrencia de um valor, podendo ser usado para puxar o valor apagado tambem exe: lista.remove(variavel) ou lista.remove('item')
+sort() | metodo M | ordena uma lista em forma alfabetica permanentemente, lista.sort() ou pode fazer ordem reversa lista.sort(reverse=True)
+reverse() | metodo M | muda a frma de uma lista permanentemente mas sem alterar a foma alfabetica, lista.reverse() ou sorted(lista).reverse()
+------------------------------instrução-------------------------------------
+del | instrução I | remove item permanentemente de uma lista segundo o indice exe: del lista[0] | apaga o item do indice 0 permanentemente
+
+_______________________________________________________________________________________________________________________________________
+-----------------------------dicionarios------------------------------------
+dicionario = {key: value} | um dicionario salva informações chave-valor, dicionario = {'nome': 'alex', 'idade': 24} ou seja, nome = alex, idade = 24
+dicionario[key] | forma de acessar
+dicionario[key] = novo valor | forma de trocar valor
+dicionario[nova chave] = novo valor | adiciona nova key e seu valor
+-----------------------------instruções-------------------------------------
+del | instrução I | deleta chave valor de um dicionario, del dicionario[key] | automaticamente o valor tambem é apagado
+-----------------------------uso em laço---------------------------------
+for key, value in dicionario.items() | cria duas variaveis que são puxadas key value com o metodo items()
+-------------------------------funções---------------------------------------
+sorted() | for value in sorted(dicionario.keys()):
+
+-------------------------------metodos---------------------------------------
+items() | usado em dicionarios em laço, para puxar as chave-valor para variaveis diferentes
+keys() | puxa apenas keys
+values() | puxa apenas value
+---------------------------aninhar----------------------------------------
+pode se por dicionarios em listas | lista = [dicionario1, dicionario2, dicionario3]
+e listas em dicionarios | dicionario = {'lista1': [item, item, item], 'lista2': [item, item, item]}
+acessar lista em um dicionario | for item in dicionario['key']: 
+dicionario em um dicionario | dicionario = {'dicionario1': {key: value, key: value,}, 'dicionario2': {key: value, key: value, key: value}}
+___________________________________________________________________________________________________________________________________________
+------------------------------instruçoes------------------------------------------
+for | instrução I | 'para' | um laço finito usado para percorrer uma lista
+in | instrução I | 'em' | 
+laço = | for item in lista:
+if | se | função sempre verdadeira
+== | igualdade
+!= | não é igual
+True | verdadeiro
+False | falso
+> | maior
+< | menor
+>= | maior igual
+<= | menor igual
++= | incrementa
+-= | decrementa
+not | não
+and | e
+or | ou
+elif | se não se
+else: | se não
+return | retorna valor
+try: | tentar
+except | excessão
+while | laço infinito
+break | sai de um laço while
+continue | ignora o resto do codigo abaixo e retorna para o começo do while
+with | com
+if-else | if-elif-else | try-except | try-except-else |
+________________________________________________________________________________________________________________________________
+-----------------------------importar modulos------------------------------
+from | a partir de
+import | importar
+as | como
+
+import modulo | importa modulo | para função ou classe deve adicionar, modulo.função()
+from modulo import função, função, etc | importa função especifica
+from modulo import função as alias | permite dar outro nome a uma função, importa uma função com um nome escolhido
+from modulo import * | importa tudo do modulo
+
+
+__________________________________________________________________________________________________________________________________
+---------definindo função propia--------------
+def | usado para definir uma função
+""" """ | aspas triplas são usadas para mostrar o que uma função faz, o nome é docstring,  """essa função ativa uma contagem"""
+
+def nome_da_funcao(parametro, parametro_2, etc): argumento posicionais
+    """o que a função faz"""
+    parametro = item ou função
+    parametro_2 = outra função
+    etc = ...
+    return algum resultado
+
+ou def função(parametro=algum resultado): argumento nomeado
+
+* | aceita mais de um argumento para criar lista
+
+def função(paramerto, *parametro_2):
+
+
+__________________________________________________________________________________
+
+-----------------------------classes----------------------------
+class | cria classe
+__init__ | metodo M | inicializa uma classe
+self | atributo especial | sempre fica em uma classe pq adiciona ele mesmo
+
+class NomeDaClasse:
+    """classe criada""""
+    
+    def __init__(self, atributo, atributo):
+        """inicializa os atributos"""
+        self.atributo = atributo
+        self.atributo = atributo
+
+    def modulo(self, atributo)
+        """modulo metodo criado"""
+        atributo = função
+        return resultado
+
+---------------------instancia de uma classe-------------------------
+variavel = Classe(atributo, atributo) | instancia
+variavel.modulo() | manipula instancia
+
+
+
+-------------------------classe herdada--------------------------
+super() | função especial que ajuda python a criar conexões entre classe pai e filho
+
+
+Class ClasseHerdada(ClassePai):
+    """classe herdada"""
+    
+    def __init__(self, atributo, atributo):
+        """inicializa os atributos da classe pai"""
+        super().__init__(atributo, atributo)
+    
+    
+    def metodo(self, atributo):
+        """metodo da classe filha"""
+        self.atributo = atributo
+
+instancia = ClasseHerdada(atributos)
+instancia.metodo()
+
+_________________________________________________________________________________________
+-------------------------------biblioteca padrão-------------------------------------------
+collections | ordereddict() | cria um dicionário ordenado vazio para nós e o armazena em uma variavel
+random | randint() | devolve um numero int aleatorio
+______________________________________________________________________________________________
+
+------------------------------manipulação de dados------------------------------------
+with | com | quando sai da identação ele fecha o arquivo
+open() | aberto | abre arquivos, open('arquivo.txt') ou open('pasta/arquivo.txt') ou open('c:/user/nome/desktop/pastadoarquivo/arquivo.txt')
+read() | lê um arquivo aberto
+readlines() | le apenas linhas especificas de arquivos abertos
+redline() | le linha especifica
+write() | escreve strings em uma linha ou arquivo, file_object.write('escrevendo qualquer coisa\n\tola mundo\n')
+
+open() | 'w' = escrita, 'r' = leitura, 'a' = concatenação, 'r+' = ler e escrever | open(arquivo, 'w')
+
+with open(arquivo) as file_object:
+    variavel = file_object.read()
+    etc...
+
+______________________________________________________________________________________________________________________________
+------------------------------------------excessões------------------------------------------------
+try:
+    codigo
+except traceback:
+    algum codigo de erro personalizado
+----------------------------------------
+try:
+    codigo
+except traceback:
+    algum codigo de erro
+else:
+    continua codigo diferente
+----------------------------------------
+try:
+    codigo
+except traceback:
+    pass
+else:
+    executa algo
+    
+
+
+_____________________________________________________________________________________
+----------------------------------analizando textos----------------------------------
+split() | metodo M | separa uma string em partes sempre que encontra um espaço, e armazena todas as partes da string em uma lista. O resultado é uma lista de palavras da string
+.count(item) | conta quantas vezes uma string aparece, variavel.count('item') | 7
+_____________________________________________________________________________________
+
+--------------------------------armazenando dados------------------------------------
+json | modulo | salva dados e codigos para serem carregados na proxima vez que o programa for aberto
+json.dump() | metodo M | serve para armazenar dados, json.dump(arquivo para salvar, arquivo.json)
+json.load() | metodo M | serve para carregar dados, json.load(arquivo)
+___________________________________________________________________________________________________
+
+----------------------------------teste de função--------------------------------------
+unittest | modulo | importa funções usadas para testar funções e classes python
+assertEqual(a, b) | metodo | verifica se  a == b
+assertNotEqual(a, b) | metodo | verifica se  a != b
+assertEqual(a, b) | metodo | verifica se a == b
+assertTrue(x) | metodo | verifica se x é True
+assertFalse(x) | metodo | verifica se x é False
+assertIn(item, lista) | metodo | verifica se item está na lista
+assertNotIn(item, lista) | metodo | verifica se item não está na lista
+setUp() | metodo | 
+
+
+
+Class NomeDaFunçãoTestCase(unittest.TestCase):
+    """teste"""
+    
+    def testfunction(self):
+        """teste de função"""
+        variavel = função teste
+        self.assertEqual(variavel, saida de função)
+
+
+unittest.main()
+____________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

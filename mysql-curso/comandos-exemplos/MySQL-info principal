@@ -1,0 +1,68 @@
+---------------MySQL----------------
+etrutura: banco de dados >>> tabelas >>> registros >>> campos
+
+------------------------------------
+codigo explicado:
+
+create database nome_do_banco_de_dados; 								# cria um banco de dados
+use nome_do_banco_de_dados; 											# usa o banco de dados para escrever os codigos abaixo
+create table nome_tabela ( 												# create table nome_tabela (); / cria uma tabela no banco de dados
+campo1 varchar(30), 													# campo1 = nome do campo / varchar(30) = caractere variavel (numero de caracteres)
+campo2 tinyint(3), 														# tinyint(3) = numero inteiro pequeno (quantidade de caractere inteiro)
+campo3 char(1), 														# char(1) = caractere (quantidade maxima de caracteres)
+campo4 float, 															# float = numero de ponto flutuante
+campo5 float,
+campo6 varchar(20)
+);
+
+describe nome_tabela # mostra descrição da seguinte tabela
+
+drop database nome_do_banco_de_dados; # apaga o banco de dados inteiro
+------------------------------------
+codigo real:
+
+create database cadastro;
+
+use cadastro;
+create table pessoas (
+	nome varchar(30),
+	idade tinyint(3),
+	sexo char(1),
+	peso float,
+	altura float,
+	nacionalidade varchar(20)
+);
+
+describe pessoas 														# mostra pessoas
+
+------------------------------------
+comandos no terminal do sql:
+
+show databases; # mostra os bancos de dados
+
+use nome_do_banco_de_dados; # entra no banco de dados //
+// status; # mostra os status do banco de dados que acabou de entrar
+// show tables; # mostra tabelas
+// describe nome_tabela; # descreve a tabela seguinte
+
+------------------------------------
+------------------------------------
+nova forma de criação de bancos de dados:
+// o caractere ; é usado para indicar o fim de um comando
+
+
+create database cadastro;
+default character set utf8										// seta o banco de dados a usar o padrão utf8 para caracteres
+default collate utf8_general_ci;
+
+use cadastro;
+create table pessoas (
+id int not null auto_increment,									// cria um campo id "not null" = não nulo, "auto_increment" = incrementa automaticamente
+nome varchar(30) not null,
+nascimento date,												// date = data
+sexo enum('M', 'F'),											// enum('char', 'char') = faz escolher apenas a quantia de char padrão
+peso decimal(5,2),												// decimal(totchar, char depois da virgula) = 00,000
+altura decimal(3,2),											// 00,0
+nacionalidade varchar(20) default 'Brasil',						// default = padão, caso não informar, nacionalidade = brasil
+primary key(id) 												// primary key(nome do campo) = cria uma id para diferenciar pessoas e objetos
+)default charset = utf8;										// default charset = utf8 = define utf8 como padão
