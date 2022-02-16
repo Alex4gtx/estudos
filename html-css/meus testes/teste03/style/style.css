@@ -26,7 +26,18 @@ header > div#logo > h1 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.315);
 }
 
+#sss, #logo, #bsearch {
+    display: inline-block;
+}
 
+#sss {
+    margin-left: 45vh;
+}
+
+#sss > input#search {
+    width: 300px;
+    height: 30px;
+}
 
 nav {
     background-color: rgba(0, 0, 0, 0.932);
