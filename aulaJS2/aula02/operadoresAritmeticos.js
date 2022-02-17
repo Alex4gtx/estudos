@@ -20,4 +20,3 @@ console.log(idade)
 
 console.log(--idade); // decrementa na linha atual/antes
 //----------------------------------------------------------------
-
