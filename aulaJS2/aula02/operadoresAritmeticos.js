@@ -1,7 +1,8 @@
 // operadores aritmeticos (matematicos)
 let salario = 100
 
-// + , - , * , / , **
+// + , - , * , / , ** , % 
+// % = restnte de divisão
 
 console.log(salario + salario);
 console.log(salario - salario);
