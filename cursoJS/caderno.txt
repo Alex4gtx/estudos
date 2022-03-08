@@ -39,3 +39,39 @@ document.write(`Olá <strong>${nome}</strong>, Seu nome tem ${nome.length} letra
 document.writeln(`<br>o seu nome em maiusculas é ${nome.toUpperCase()}`) // toUpperCase() trasforma strings em maiusculas
 
 document.writeln(`<br>o seu nome em minusculas é ${nome.toLowerCase()}`) // toLowerCase() transforma em minusculas
+
+
+operadores aritmeticos
++, - , * , /, %, **
+
+ordem de precedencia dos operadores aritméticos
+()
+**
+*, /, %
++, -
+
+12 * 9 / 2  //se tiver dois ou mais da mesma ordem, será resolvido da esquerda para direita
+
+operadores relacionais
+> maior
+< menor
+>= maior ou igual
+<= menor ou igual
+== é igual '2' == 2 = true
+!= não é igual
+
+op identidade
+=== igualdade estrita 9 === '9' = false
+
+operadores logicos
+! não
+&& e
+|| ou
+
+
+operador ternário
+?
+:
+teste ? true : false
+const media >= 7.0 ? 'aprovado':'reprovado';
+
