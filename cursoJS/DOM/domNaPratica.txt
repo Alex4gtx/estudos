@@ -1,0 +1,21 @@
+O que é DOM?
+Document Object Model
+- está presente no navegador e não no node
+
+window -> document | location | history
+          document -> html
+                      html -> head | body
+                              head -> meta | title
+                              body -> h1 | p | p | div
+                                               p -> strong
+
+window.document.write(window.document.charset);
+
+navegação:
+    -por marca | getElementsByTagName()[seleciona objeto]
+    -por ID | getElementsById()
+    -por Nome | getElementsByName()[0]
+    -por Classe | getElementsByClassName()
+    -por Seletor | querySelector(), querySelectorAll()
+
+
