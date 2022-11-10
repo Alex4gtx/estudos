@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>estudos de iframe</title>
+    <style>
+        iframe {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
@@ -16,8 +24,16 @@
     </p>
     <p>
         o site do 
-        <iframe src="http://www.google.com" frameborder="0"></iframe>
+        <iframe src="http://www.google.com" frameborder="1"></iframe>
         também é muito legal! porem tem proteção de acesso do iframe :c
+    </p>
+    <p>
+        O repositério do guanabara 
+        <!-- Tamanho padrão é de 300x150px no iframe-->
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500px" width="500" scrolling="auto">
+            <a href="https://gustavoguanabara.github.io" target="_blank">se o dispositivo não for compativel aparece isso</a>
+        </iframe>
+         também é legal!
     </p>
 </body>
 </html>
