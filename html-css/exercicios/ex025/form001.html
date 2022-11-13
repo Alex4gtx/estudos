@@ -9,21 +9,30 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
-
-        input#nome {
-            width: 70vw;
-            background: linear-gradient(to right, rgb(70, 0, 0), red);
-            color: white;
-            border: 1px solid black;
-        }
     </style>
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
-    <form action="">
-        <p>nome: <input type="text" name="nome" id="nome"></p>
-        <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <!--form = formulario, usado para pegar dados. 
+            
+            action = local onde vou enviar as informações, method = tipo de envio de dados, autocomplete = autocompletar textos-->
+        <p>
+            <!-- label = cria uma relação entre os ids do input com o que esta escrito, for = recebe id do input
+            
+            input = entrada de dados, type = tipo de dados que vai receber, name = usado para identificar na hora de usar ele na programação backend, não usar em envios de fotos e programas.
+        
+            GET = usar quando os dados não forem sensiveis, são urls compartilhaveis, não pode ultrapassar 3000 bytes ou 3000 letras no formulario, pode usar para enviar arquivos e imagens etc, tamanho ilimitado.
+
+            POST = usar para dados sensiveis como senhas e dados secretos. -->
+            <label for="inome">nome: </label><input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">sobrenome: </label><input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
     </form>
 </body>
 </html>
