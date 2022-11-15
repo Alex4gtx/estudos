@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+header>img {
+    width: 50px;
+}
+
+header>h1>a {
+    color: White;
+    font-weight: lighter;
+    font-style: oblique;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+header>h1>a:hover {
+    text-shadow: 0px 0px 3px White;
+    transition: 0.5s;
+}
+
