@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 4</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        .container {
+            background-color: white;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 350px;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.322);
+        }
+
+        .container>hr {
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+
+        .container div {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        #enviar {
+            position: relative;
+            top: 3px;
+        }
+
+        .buttonform {
+            display: inline-block;
+        }
+
+        .buttonform>input {
+            margin: 5px;
+            width: 100px;
+            height: 21px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+        }
+
+        #limpar {
+            position: relative;
+            left: 10px;
+            top: 3px;
+        }
+
+        fieldset {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplo de formulário</h1>
+        <hr>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" autocomplete="name" required maxlength="20" placeholder="Digite seu nome completo">
+                </div>
+                <div id="entrada">
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="Digite seu endereço de E-Mail" size="23" autocomplete="email">
+                </div>
+                <div>
+                    <label for="itelefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="itelefone" required autocomplete="tel-national" placeholder="(xx) 9 xxxx-xxxx" size="13" pattern="^\d(\d{2}\)\d[0-9]{4,5}-\d[0-9]{4,5}$">
+                </div>
+                <!-- estudar mais sobre RegEx -->
+            </fieldset>
+            <div id="enviar" class="buttonform">
+                <input type="submit" value="Enviar">
+            </div>
+            <div class="buttonform" id="limpar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
