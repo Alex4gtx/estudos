@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        .cont-form {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.40);
+            text-align: left;
+            width: 400px;
+        }
+
+        .cont-form>h1, legend {
+            margin-left: 10px;
+        }
+
+        .cont-form>form>fieldset, input {
+            margin: 5px;
+        }
+
+        #botao {
+            text-align: center;
+        }
+
+        #botao>input {
+            width: 90px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont-form">
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="isxmasc" value="M" checked>
+                <label for="isxmasc">Masculino</label>
+                <br>
+                <input type="radio" name="sexo" id="isxfem" value="F">
+                <label for="isxfem">Femenino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="basquete" id="ibasquete">
+                <label for="ibasquete">Basquete</label>
+                <br>
+                <input type="checkbox" name="futebol" id="ifutebol">
+                <label for="ifutebol">Futebol</label>
+                <br>
+                <input type="checkbox" name="natacao" id="inatacao">
+                <label for="inatacao">Natação</label>
+                <br>
+                <input type="checkbox" name="tenis" id="itenis">
+                <label for="itenis">Tênis</label>
+                <br>
+            </fieldset>
+
+            <p id="botao">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
