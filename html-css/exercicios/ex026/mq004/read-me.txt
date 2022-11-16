@@ -1,0 +1,9 @@
+media query = media type + media features
+
+mobile first:
+    conceito de criação de site que aborda uma ideia de criar um site a partir de um site versão mobile,
+    esse conceito se difere do conceito antigo que primeiro era feito para computador e depois eram retirados
+    alguns conteúdos para se adaptar com os dispositivos mobile, esse conceito antigo além de mais trabalhoso,
+    fazia com que os sites mobiles acabassem tendo poucas features, já com o novo conceito se torna mais fácil
+    e também se enquadra em boas praticas, fazendo com que os motores de buscas deem um crédito a mais em sites
+    construidos desta forma.
