@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #saida {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, atque inventore! Quaerat nulla accusamus dignissimos maxime voluptas accusantium cumque, doloribus nemo vitae porro maiores facilis sit nisi cupiditate enim voluptate!</p>
+    <output id="saida"></output>
+    <script>
+        let nome = window.prompt('seu nome:')
+        document.write(`<output id="saida">seu nome tem ${nome.length} letras</output>`)
+        let n1 = 123.4
+        n1 = n1.toFixed(2).replace('.', ',')
+        n1 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(`<output id="saida">seu nome tem ${nome.length} letras</output>`)
+        
+    </script>
+</body>
+</html>

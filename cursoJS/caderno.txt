@@ -75,3 +75,21 @@ operador ternário
 teste ? true : false
 const media >= 7.0 ? 'aprovado':'reprovado';
 
+----------------------------------------------------------------------------
+comandos js para html também:
+    Number() => converte tudo em numero
+    String() => converte tudo em string
+    n1.toFixed(2) => 23.20 adiciona x casas apos a virgula: retorna string
+    n1.replace() => ("isso","por isso") troca um caractere por outro
+    
+    document.write(`<output id="saida">seu nome tem ${nome.length} letras</output>`) => escreve algo no documento html
+
+    window.prompt('seu nome:') => faz a janela do navegador pedir dados de entrada
+
+    window.alert() => emite um alerta na janela do navegador
+    window.confirm() => emite uma escolha na janela do usuario
+
+    toUpperCase() => coloca uma string em maiusculas
+    toLowerCase() => coloca uma string em minusculas
+
+    
