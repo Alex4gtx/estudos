@@ -92,4 +92,44 @@ comandos js para html também:
     toUpperCase() => coloca uma string em maiusculas
     toLowerCase() => coloca uma string em minusculas
 
+ordem:
+    op aritmeticos > op relacionais > op lógicos > op ternário
+
+operador ternario:
+    condição ? verdadeiro : falso
+
+DOM: document object model
+    arvore DOM:
+        window{
+            location{}
+            document{
+                html{
+                    head{
+                        meta
+                        title
+                    }
+                    body{
+                        h1
+                        p
+                        p {
+                            strong
+                        }
+                        div
+                    }
+                }
+            }
+            history{}
+        }
+
+metodos de acesso por DOM:
+    por marca => getElementsByTagName(tag)[numero da tag]
+    por id => getElementById()
+    por nome
+    por classe
+    por seletor => querySelector('div#msg')
+
+comandos DOM:
+    innerTEXT => pega apenas o texto
+    innerHTML => pega o texto com sua formatação html
+    objArea.addEventListener('click', clique) => ('evento', função criada em js)
     
