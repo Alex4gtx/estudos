@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document exe condiçôes</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main {
+            width: 80vw;
+            height: 100vh;
+            margin: auto;
+        }
+
+        main > h1 {
+            margin-top: 20px;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+
+        #pergunta1 {
+            background-color: lightgray;
+            border: 1px solid rgba(128, 128, 128, 0.644);
+            border-radius: 20px;
+
+            box-sizing: border-box;
+            width: 400px;
+            height: auto;
+            margin: 20px;
+            padding: 20px;
+
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.411);
+        }
+
+        #pergunta1 > p {
+            margin-bottom: 10px;
+        }
+
+        #output {
+            background-color: whitesmoke;
+            border: 1px solid rgba(128, 128, 128, 0.644);
+            border-radius: 20px;
+
+            box-sizing: border-box;
+            width: 400px;
+            min-height: 50px;
+            height: auto;
+            margin: 20px;
+            padding: 20px;
+
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.411);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>como saber se você é gringo?</h1>
+        <div id="pergunta1">
+            <p>Em qual país você mora? </p>
+            <input type="text" name="pergunta" id="ipergunta" placeholder="digite seu país." required>
+            <input type="button" value="Verificar" id="iverificar">
+        </div>
+        <div id="output">
+            <!--mostrará o resultado-->
+        </div>
+    </main>
+    <script>
+        window.document.getElementById("iverificar").addEventListener("click", clicar,);
+
+        function clicar() {
+            let pergunta = document.getElementById("ipergunta");
+            pergunta = pergunta.value;
+
+            let out = document.getElementById("output");
+
+            if (pergunta == 'brasil') {
+                out.innerText = `Você mora no ${pergunta}, então você não é gringo.`;
+            } else if (pergunta !== 'brasil') {
+                out.innerText = `Você mora no ${pergunta}, então você é gringo.`;
+            }
+        }
+    </script>
+</body>
+</html>
