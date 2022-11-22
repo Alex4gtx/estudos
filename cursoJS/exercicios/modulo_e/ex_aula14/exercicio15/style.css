@@ -45,6 +45,10 @@ div#iresp {
     margin: 20px;
 }
 
+div#iresp > p {
+    text-align: justify;
+}
+
 footer {
     border-top: 1px solid rgba(255, 255, 255, 0.253);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
