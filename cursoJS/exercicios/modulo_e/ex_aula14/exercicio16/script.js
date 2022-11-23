@@ -10,7 +10,9 @@ function gerarTabuada() {
         resultado.innerHTML = '';
         for (let i = 0; i <= 10; i++) {
             let r = i * input;
-            resultado.innerHTML += `<p>${i} X ${input} = ${r}</p>`;
+            let paragrafo = document.createElement('p');
+            paragrafo.innerText = `${i} X ${input} = ${r}`;
+            resultado.appendChild(paragrafo);
         }
     }
 }
