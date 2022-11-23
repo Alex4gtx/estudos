@@ -10,6 +10,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-color: gray;
+    overflow-x: hidden;
 }
 
 header {
@@ -37,12 +38,18 @@ section > div#bloco2 {
     position: relative;
     box-sizing: border-box;
     overflow-y: scroll;
+    overflow-x: auto;
     margin: 10px;
     padding: 5px;
-    width: 30%;
+    width: 50%;
     height: 180px;
-    background-color: aqua;
-    
+    background-color: whitesmoke;
+    border: 1px inset lightgray;
+}
+
+section > input {
+    padding: 4px;
+    margin: 10px;
 }
 
 footer {
