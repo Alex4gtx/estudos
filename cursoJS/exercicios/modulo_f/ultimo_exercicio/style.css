@@ -1,2 +1,55 @@
 @charset "utf-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+
+header {
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+section {
+    box-sizing: border-box;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+}
+
+section > div#bloco1 {
+    margin: 10px;
+}
+
+section > div#bloco2 {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    margin: 10px;
+    padding: 5px;
+    width: 30%;
+    height: 180px;
+    background-color: aqua;
+    
+}
+
+footer {
+    margin: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+}
