@@ -52,6 +52,18 @@ section > input {
     margin: 10px;
 }
 
+section > div#bloco3 {
+    display: none;
+    margin: 10px;
+    margin-top: 5px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+#bloco3 > p {
+    margin-bottom: 10px;
+}
+
 footer {
     margin: 20px;
     color: white;
