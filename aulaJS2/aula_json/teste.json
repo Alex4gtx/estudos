@@ -1,0 +1,16 @@
+[
+    {
+        "nome": "Alex",
+        "nomedoMeio": "Giovani",
+        "sobrenome": "hirsch",
+        "idade": 25,
+        "estaTrabalhando": false,
+        "trabalhoQueProcuro": {
+            "profissão": "programador",
+            "empresa": "qualquer",
+            "modalidades": ["home office", "presencial", "semipresencial"],
+            "nivel": "junior"
+        },
+        "hobbies": ["programar", "andar de bicicleta", "jogar videogame"]
+    }
+]
