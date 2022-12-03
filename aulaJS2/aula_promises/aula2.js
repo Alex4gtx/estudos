@@ -11,8 +11,7 @@ const promessa = new Promise((resolve, reject) => {
     }
 })
 
-
-promessa.then((dado2) => {return dado2.toLowerCase()}).then((dado) => {console.log(dado)}).catch((erro) => {console.log('aconteceu um erro: ' + erro);})
+promessa.then(dado2 => dado2.toLowerCase()).then(dado => console.log(dado)).catch(erro => console.log('aconteceu um erro: ' + erro));
 
 // resolver várias promessas com all
 // captura apos todas as promessas se completarem
@@ -30,9 +29,7 @@ const p3 = new Promise((resolve, reject) => {
     resolve('p3 ok')
 })
 
-const resolveAll = Promise.all([p1, p2, p3]).then((dados) => {
-    console.log(dados);
-})
+const resolveAll = Promise.all([p1, p2, p3]).then(dados => console.log(dados))
 
 // varias promessas com race
 // resolve aquela que ganha a corrida, a que é mais rapida

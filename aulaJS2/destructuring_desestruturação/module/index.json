@@ -1,0 +1,13 @@
+[
+    {
+        "nome": "Alex",
+        "nomedoMeio": "Giovani",
+        "sobrenome": "Hirsch",
+        "idade": 25,
+        "estaTrabalhando": true,
+        "infoEmprego": {
+            "empresa": "Darpa",
+            "tipo": "desenvolvimento de armas"
+        }
+    }
+]
